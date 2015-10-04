@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriveSafeLockViewController">
+            <connections>
+                <outlet property="blurredFrame" destination="fqo-s8-oPR" id="MqY-DM-Weh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqo-s8-oPR">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This device is locked by Lockyroad because your vehicle is in motion." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyG-Bf-fNg">
+                    <rect key="frame" x="154" y="256" width="291" height="87"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="VaI-WK-U3n"/>
+                        <constraint firstAttribute="width" constant="291" id="spa-ju-EbW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLF-Im-rdy">
+                    <rect key="frame" x="236" y="197" width="129" height="51"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="Ilf-US-PkV"/>
+                        <constraint firstAttribute="width" constant="129" id="QgH-WG-6NF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TyG-Bf-fNg" firstAttribute="centerY" secondItem="fqo-s8-oPR" secondAttribute="centerY" id="2Hu-vq-zye"/>
+                <constraint firstItem="TyG-Bf-fNg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="68L-Fj-4Ta"/>
+                <constraint firstItem="TyG-Bf-fNg" firstAttribute="top" secondItem="GLF-Im-rdy" secondAttribute="bottom" constant="8" symbolic="YES" id="7uj-Vd-TNA"/>
+                <constraint firstItem="TyG-Bf-fNg" firstAttribute="centerX" secondItem="fqo-s8-oPR" secondAttribute="centerX" id="DTl-tc-dAa"/>
+                <constraint firstItem="GLF-Im-rdy" firstAttribute="centerX" secondItem="fqo-s8-oPR" secondAttribute="centerX" id="ELC-Fo-KxI"/>
+                <constraint firstItem="GLF-Im-rdy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tOD-KJ-WdZ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
